@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Daily Expense Calculator
 
@@ -197,3 +198,7 @@ The application provides a simple and effective solution for tracking personal e
 **Language:** Python  
 **Testing Framework:** Pytest  
 **Storage:** CSV
+=======
+# my-first-python-app
+A simple program to calculate daily expenses
+>>>>>>> e92b318dd38f282d8ef4a3269dde4c0787b96ebc
