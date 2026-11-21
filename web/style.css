@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7f5;
+    color: #202b25;
+    min-height: 100vh;
+}
+
+.header {
+    background: #123c2b;
+    color: white;
+    padding: 28px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.header p {
+    color: #c7dfd1;
+    font-size: 14px;
+}
+
+.date {
+    background: #245b42;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.container {
+    width: 86%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5ebe7;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.card p {
+    color: #718078;
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.card h2 {
+    color: #176b43;
+    font-size: 27px;
+}
+
+.form-section,
+.transactions,
+.category-section {
+    background: white;
+    padding: 27px;
+    border-radius: 12px;
+    border: 1px solid #e5ebe7;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+    margin-bottom: 25px;
+}
+
+.form-section h2,
+.transactions h2,
+.category-section h2 {
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+#expenseForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #45564b;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dce5df;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #238454;
+    box-shadow: 0 0 0 3px rgba(35, 132, 84, 0.1);
+}
+
+button {
+    background: #176b43;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #105334;
+}
+
+#expenseForm button {
+    align-self: end;
+    width: fit-content;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th {
+    background: #f0f6f2;
+    color: #405449;
+    text-align: left;
+    padding: 14px;
+    font-size: 13px;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #edf1ee;
+    font-size: 14px;
+}
+
+.delete-btn {
+    background: #dc4545;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background: #b72c2c;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5px;
+    border-bottom: 1px solid #edf1ee;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    color: #718078;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 23px 5%;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .container {
+        width: 92%;
+        margin: 22px auto;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .card {
+        padding: 19px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    #expenseForm {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section,
+    .transactions,
+    .category-section {
+        padding: 19px;
+    }
+
+    #expenseForm button {
+        width: 100%;
+    }
+}
